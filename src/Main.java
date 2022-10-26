@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -69,6 +71,49 @@ public class Main {
         }
         else {
             System.out.println("В вагоне нет совбодных мест.");
+        }
+
+        System.out.println("Exercise 3.1");
+        int age3 = 30;
+        if (age3 >= 2 && age3 < 6) {
+            System.out.println("Если возраст человека равен " + age3 + ", то ему нужно ходить в детский сад");
+        }
+        else if (age3 >= 6 && age3 < 18) {
+            System.out.println("Если возраст человека равен " + age3 + ", то ему нужно ходить в школу.");
+        }
+        else if (age3 >= 18 && age3 < 24) {
+            System.out.println("Если возраст человека равен " + age3 + ", то ему нужно ходить в университет.");
+        }
+        else {
+            System.out.println("Если возраст человека равен " + age3 + ", то ему нужно ходить на работу.");
+        }
+
+        System.out.println("Exercise 3.2");
+        int ageChild = 5;
+        if (ageChild < 5) {
+            System.out.println("Ребенку запрещено кататься на аттракционе.");
+        }
+        else if (ageChild >= 5 && ageChild < 14) {
+            System.out.println("Ребенку можно кататься на аттрационе в сопровождении взрослого.");
+        }
+        else  {
+            System.out.println("Ребенку можно кататься на аттрационе самостоятельно, без сопровождения взрослого.");
+        }
+
+        System.out.println("Exercise 3.3");
+
+        int one = 15;
+        int two = 5;
+        int free = 10;
+
+        if (one >= two && one >= free) {
+            System.out.println("Число равное " + one + " больше.");
+        }
+        else if (two >= one && two >= free) {
+            System.out.println("Число равное " + two + " больше.");
+        }
+        else {
+            System.out.println("Число равное " + free + " больше.");
         }
     }
 }
